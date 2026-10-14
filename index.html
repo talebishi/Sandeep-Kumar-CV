@@ -1,0 +1,2159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandeep Kumar | Senior Life Sciences IT Quality & CSV Lead | GenAI Practice Lead</title>
+  <meta name="description" content="Portfolio of Sandeep Kumar - Cork-based Senior Life Sciences IT Quality & CSV Lead with 20+ years driving GxP compliance, Computer Software Assurance, and GenAI Quality Automation. Stamp 4 eligible.">
+  <meta name="author" content="Sandeep Kumar">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* CSS Variables & Global Reset */
+    :root {
+      --bg-dark: #090a10;
+      --bg-surface: #0e111a;
+      --bg-card: rgba(17, 21, 34, 0.75);
+      --bg-card-hover: rgba(26, 32, 52, 0.85);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(0, 229, 255, 0.25);
+      
+      --cyan: #00e5ff;
+      --cyan-glow: rgba(0, 229, 255, 0.15);
+      --purple: #a855f7;
+      --purple-glow: rgba(168, 85, 247, 0.15);
+      --pink: #ec4899;
+      --pink-glow: rgba(236, 72, 153, 0.15);
+      --amber: #f59e0b;
+      --emerald: #10b981;
+      
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+      
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Accent Rainbow Line */
+    .top-accent-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--cyan), var(--purple), var(--pink), var(--amber));
+      z-index: 1000;
+    }
+
+    /* Background Ambient Canvas & Glows */
+    #ambient-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.6;
+    }
+
+    .glow-orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.18;
+    }
+    .glow-orb-1 {
+      top: 10%;
+      left: 15%;
+      width: 450px;
+      height: 450px;
+      background: radial-gradient(circle, var(--cyan) 0%, transparent 70%);
+    }
+    .glow-orb-2 {
+      top: 40%;
+      right: 10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, var(--purple) 0%, transparent 70%);
+    }
+    .glow-orb-3 {
+      bottom: 15%;
+      left: 30%;
+      width: 550px;
+      height: 550px;
+      background: radial-gradient(circle, var(--pink) 0%, transparent 70%);
+    }
+
+    /* Layout Containers */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    section {
+      padding: 5.5rem 0;
+      position: relative;
+    }
+
+    /* Typography Utilities */
+    .section-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .section-eyebrow::before {
+      content: '//';
+      color: var(--pink);
+    }
+
+    .section-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .section-title span.gradient-text {
+      background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 50%, var(--pink) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      max-width: 720px;
+      line-height: 1.65;
+      margin-bottom: 3rem;
+    }
+
+    /* Sticky Navigation */
+    .navbar {
+      position: fixed;
+      top: 3px;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(9, 10, 16, 0.8);
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 900;
+      transition: var(--transition);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+
+    .brand-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: #000;
+      box-shadow: 0 0 15px var(--cyan-glow);
+    }
+
+    .brand-meta {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-tag {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--cyan);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: var(--radius-full);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .nav-link.active {
+      color: var(--cyan);
+      box-shadow: inset 0 0 0 1px var(--border-accent);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn-nav {
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.45rem 1.1rem;
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .btn-nav-primary {
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      color: #000;
+    }
+    .btn-nav-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 15px var(--cyan-glow);
+    }
+
+    /* Mobile Hamburger */
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text-primary);
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      padding-top: 7rem;
+      padding-bottom: 4rem;
+      position: relative;
+    }
+
+    .hero-watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: clamp(4rem, 15vw, 13rem);
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      color: rgba(255, 255, 255, 0.015);
+      white-space: nowrap;
+      user-select: none;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 960px;
+    }
+
+    .badge-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-full);
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      backdrop-filter: blur(8px);
+    }
+
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+    .dot-green {
+      background: var(--emerald);
+      box-shadow: 0 0 10px var(--emerald);
+      animation: pulse-dot 2s infinite;
+    }
+    .dot-cyan {
+      background: var(--cyan);
+      box-shadow: 0 0 10px var(--cyan);
+    }
+    .dot-purple {
+      background: var(--purple);
+      box-shadow: 0 0 10px var(--purple);
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 5.5vw, 4.4rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-typewriter-wrapper {
+      display: flex;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: clamp(1.1rem, 2.5vw, 1.65rem);
+      color: var(--cyan);
+      margin-bottom: 1.75rem;
+      min-height: 2.2rem;
+    }
+
+    .typewriter-cursor {
+      display: inline-block;
+      width: 3px;
+      height: 1.4em;
+      background-color: var(--pink);
+      margin-left: 6px;
+      animation: blink-caret 0.9s infinite;
+    }
+
+    @keyframes blink-caret {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+
+    .hero-bio {
+      font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+      color: var(--text-secondary);
+      line-height: 1.75;
+      max-width: 850px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-bio strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .btn-main {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary-gradient {
+      background: linear-gradient(135deg, var(--cyan) 0%, var(--purple) 50%, var(--pink) 100%);
+      color: #05060a;
+      box-shadow: 0 4px 20px var(--cyan-glow);
+    }
+    .btn-primary-gradient:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 28px rgba(0, 229, 255, 0.35);
+    }
+
+    .btn-glass {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+      backdrop-filter: blur(10px);
+    }
+    .btn-glass:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .btn-icon-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 500;
+      padding: 0.65rem 1rem;
+      border-radius: var(--radius-full);
+      transition: var(--transition);
+    }
+    .btn-icon-link:hover {
+      color: var(--cyan);
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    /* Process & Impact Pillar Cards (Ingest · Validate · Automate Style) */
+    .impact-section {
+      padding: 3rem 0 5rem 0;
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .impact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 2rem 1.75rem;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+      transition: var(--transition);
+    }
+
+    .impact-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-accent);
+      background: var(--bg-card-hover);
+    }
+
+    .impact-card-top-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+    }
+    .top-cyan { background: var(--cyan); box-shadow: 0 0 10px var(--cyan); }
+    .top-purple { background: var(--purple); box-shadow: 0 0 10px var(--purple); }
+    .top-pink { background: var(--pink); box-shadow: 0 0 10px var(--pink); }
+
+    .impact-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+    }
+
+    .impact-card-step {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .impact-card-category {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+    .text-cyan { color: var(--cyan); }
+    .text-purple { color: var(--purple); }
+    .text-pink { color: var(--pink); }
+
+    .impact-stat {
+      font-size: clamp(2.2rem, 3.5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+    }
+
+    .impact-detail {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+
+    .impact-footer-caption {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Marquee Tech Ticker */
+    .marquee-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding: 1.25rem 0;
+      background: rgba(14, 17, 26, 0.6);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+      backdrop-filter: blur(8px);
+    }
+
+    .marquee-wrapper::before, .marquee-wrapper::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 120px;
+      height: 100%;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .marquee-wrapper::before {
+      left: 0;
+      background: linear-gradient(90deg, var(--bg-dark), transparent);
+    }
+    .marquee-wrapper::after {
+      right: 0;
+      background: linear-gradient(-90deg, var(--bg-dark), transparent);
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee-scroll 35s linear infinite;
+      gap: 1.5rem;
+    }
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes marquee-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .marquee-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      padding: 0.3rem 0.8rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-full);
+      white-space: nowrap;
+    }
+    .marquee-item span.bullet {
+      color: var(--cyan);
+    }
+
+    /* Experience / Timeline Section */
+    .timeline-container {
+      position: relative;
+      padding-left: 2rem;
+      margin-top: 2rem;
+    }
+
+    .timeline-line {
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 7px;
+      width: 2px;
+      background: linear-gradient(180deg, var(--cyan) 0%, var(--purple) 50%, var(--pink) 100%);
+      opacity: 0.4;
+    }
+
+    .timeline-entry {
+      position: relative;
+      margin-bottom: 3.5rem;
+    }
+    .timeline-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-node {
+      position: absolute;
+      left: -2rem;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--bg-dark);
+      border: 2px solid var(--cyan);
+      box-shadow: 0 0 10px var(--cyan);
+    }
+    .timeline-entry:nth-child(2) .timeline-node {
+      border-color: var(--purple);
+      box-shadow: 0 0 10px var(--purple);
+    }
+    .timeline-entry:nth-child(3) .timeline-node {
+      border-color: var(--pink);
+      box-shadow: 0 0 10px var(--pink);
+    }
+    .timeline-entry:nth-child(4) .timeline-node {
+      border-color: var(--amber);
+      box-shadow: 0 0 10px var(--amber);
+    }
+
+    .timeline-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      backdrop-filter: blur(12px);
+      transition: var(--transition);
+    }
+    .timeline-card:hover {
+      border-color: var(--border-accent);
+      background: var(--bg-card-hover);
+    }
+
+    .timeline-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .role-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .company-name {
+      font-size: 1.05rem;
+      color: var(--cyan);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .timeline-meta {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: right;
+    }
+
+    .timeline-points {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .timeline-points li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .timeline-points li::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: var(--cyan);
+      font-size: 1.1rem;
+      line-height: 1.3;
+    }
+
+    .tech-pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tech-pill {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 0.25rem 0.65rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-full);
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+    .tech-pill:hover {
+      color: var(--text-primary);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Sub-projects list inside Cognizant card */
+    .subproject-accordion {
+      margin-top: 1.75rem;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 1.5rem;
+    }
+
+    .subproject-heading {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .subproject-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .subproject-mini-card {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 1.2rem;
+      transition: var(--transition);
+    }
+    .subproject-mini-card:hover {
+      border-color: var(--purple);
+      transform: translateY(-2px);
+    }
+
+    .subproject-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.35rem;
+    }
+
+    .subproject-role {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--purple);
+      margin-bottom: 0.65rem;
+    }
+
+    .subproject-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Featured Projects Section */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 2.25rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+      transition: var(--transition);
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-accent);
+      background: var(--bg-card-hover);
+    }
+
+    .project-card.featured-card {
+      grid-column: 1 / -1;
+      border-color: rgba(0, 229, 255, 0.35);
+      background: linear-gradient(135deg, rgba(14, 21, 37, 0.9) 0%, rgba(26, 17, 43, 0.85) 100%);
+    }
+
+    .project-badge-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+    }
+
+    .project-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .project-title {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.85rem;
+      line-height: 1.3;
+    }
+
+    .project-desc {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .project-highlights {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-highlights li {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .project-highlights li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--emerald);
+      font-weight: 700;
+    }
+
+    /* Skills / Competencies Section (5-6 Card Grid) */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      backdrop-filter: blur(12px);
+      transition: var(--transition);
+    }
+    .skill-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--border-accent);
+      background: var(--bg-card-hover);
+    }
+
+    .skill-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .skill-dot-indicator {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .skill-card-title {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-primary);
+    }
+
+    .skill-tags-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .skill-badge {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      transition: var(--transition);
+    }
+    .skill-badge:hover {
+      color: var(--text-primary);
+      border-color: var(--cyan);
+      background: rgba(0, 229, 255, 0.05);
+    }
+
+    /* Education, Standards & Credentials */
+    .credentials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .cred-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      backdrop-filter: blur(12px);
+    }
+
+    .cred-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.35rem;
+    }
+
+    .cred-subtitle {
+      font-size: 0.92rem;
+      color: var(--cyan);
+      margin-bottom: 0.75rem;
+    }
+
+    .cred-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Contact Section (Exact match to sakshimannur12.github.io/#contact) */
+    .contact-section {
+      padding: 6rem 0;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, rgba(16, 20, 34, 0.95) 0%, rgba(22, 16, 36, 0.95) 100%);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      border-radius: var(--radius-lg);
+      padding: clamp(2.5rem, 5vw, 4.5rem);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 80px rgba(168, 85, 247, 0.1);
+    }
+
+    .contact-box::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--cyan-glow) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .contact-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-heading {
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      color: var(--text-primary);
+      margin-bottom: 2rem;
+      max-width: 800px;
+    }
+
+    .contact-heading span.gradient-cta {
+      background: linear-gradient(90deg, var(--cyan), var(--purple), var(--pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .contact-snippet-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .email-container {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-full);
+      padding: 0.4rem 0.5rem 0.4rem 1.25rem;
+      gap: 0.85rem;
+    }
+
+    .email-text {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      color: var(--text-primary);
+    }
+
+    .btn-copy {
+      background: linear-gradient(135deg, var(--pink) 0%, var(--amber) 50%, var(--cyan) 100%);
+      color: #05060a;
+      border: none;
+      padding: 0.55rem 1.25rem;
+      border-radius: var(--radius-full);
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .btn-copy:hover {
+      opacity: 0.92;
+      transform: scale(1.03);
+    }
+
+    .contact-actions-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .btn-contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    .btn-contact-link:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--cyan);
+      color: var(--cyan);
+      transform: translateY(-2px);
+    }
+
+    .contact-details-grid {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .detail-item-label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.35rem;
+    }
+
+    .detail-item-val {
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    /* Toast Notification for Copy */
+    .toast-notice {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #10b981;
+      color: #000;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transform: translateY(100px);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s;
+    }
+    .toast-notice.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 2.5rem 0;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      background: rgba(9, 10, 16, 0.9);
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    /* Responsive Queries */
+    @media (max-width: 900px) {
+      .impact-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-menu {
+        display: none;
+      }
+      .mobile-toggle {
+        display: block;
+      }
+      .timeline-container {
+        padding-left: 1.5rem;
+      }
+      .timeline-node {
+        left: -1.5rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      section {
+        padding: 4rem 0;
+      }
+      .hero-section {
+        padding-top: 6rem;
+      }
+      .contact-box {
+        padding: 2rem 1.25rem;
+      }
+      .email-container {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .email-text {
+        font-size: 0.85rem;
+      }
+    }
+
+    /* Print Styling */
+    @media print {
+      .top-accent-bar, .navbar, #ambient-canvas, .glow-orb, .btn-copy, .btn-main, .marquee-wrapper {
+        display: none !important;
+      }
+      body {
+        background: #fff !important;
+        color: #000 !important;
+      }
+      .impact-card, .timeline-card, .project-card, .skill-card, .contact-box {
+        background: #fff !important;
+        color: #000 !important;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+      }
+      .section-title, .role-title, .project-title, .contact-heading {
+        color: #000 !important;
+      }
+      .gradient-text, .gradient-cta {
+        -webkit-text-fill-color: #000 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Accent Gradient Line -->
+  <div class="top-accent-bar"></div>
+
+  <!-- Background Canvas Particle Animation & Glowing Orbs -->
+  <canvas id="ambient-canvas"></canvas>
+  <div class="glow-orb glow-orb-1"></div>
+  <div class="glow-orb glow-orb-2"></div>
+  <div class="glow-orb glow-orb-3"></div>
+
+  <!-- Sticky Top Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-brand">
+        <div class="brand-avatar">SK</div>
+        <div class="brand-meta">
+          <span class="brand-name">Sandeep Kumar</span>
+          <span class="brand-tag">GxP · CSV · GenAI Lead</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active">Overview</a></li>
+        <li><a href="#impact" class="nav-link">Pillars</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#competencies" class="nav-link">Competencies</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-nav btn-nav-primary">Get in Touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-watermark">SANDEEP KUMAR</div>
+    <div class="container">
+      <div class="hero-content">
+        
+        <!-- Status Badges -->
+        <div class="badge-group">
+          <div class="pill-badge">
+            <span class="pill-dot dot-green"></span>
+            <span>Cork, Ireland</span>
+          </div>
+          <div class="pill-badge">
+            <span class="pill-dot dot-cyan"></span>
+            <span>Stamp 4 (Full Work Authorization)</span>
+          </div>
+          <div class="pill-badge">
+            <span class="pill-dot dot-purple"></span>
+            <span>20+ Years Life Sciences IT Quality</span>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          Sandeep Kumar
+        </h1>
+
+        <!-- Typewriter Animated Subtitle -->
+        <div class="hero-typewriter-wrapper">
+          <span id="typewriter-text"></span><span class="typewriter-cursor"></span>
+        </div>
+
+        <!-- Bio Paragraph -->
+        <p class="hero-bio">
+          Cork-based <strong>Senior Life Sciences IT Quality & Computerized System Validation (CSV) Lead</strong> and <strong>GenAI Practice Lead</strong> with 20+ years driving GxP compliance across pharmaceutical manufacturing. Leading the real-world deployment of autonomous AI agents (built on Claude and Microsoft Copilot) that automate deviation, CAPA, and periodic-review documentation in live regulated environments with a flawless record of <strong>zero critical findings</strong> across HPRA, USFDA, and MHRA inspections.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn-main btn-primary-gradient">
+            <span>Get in touch</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#experience" class="btn-main btn-glass">
+            <span>View Experience & Projects</span>
+          </a>
+          <a href="https://linkedin.com/in/sandeep-kumar-cork" target="_blank" rel="noopener noreferrer" class="btn-icon-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <span>LinkedIn ↗</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Process & Key Metrics Section (Ingest · Validate · Automate Style) -->
+  <section class="impact-section" id="impact">
+    <div class="container">
+      <div class="impact-grid">
+        
+        <!-- Pillar 01 -->
+        <div class="impact-card">
+          <div class="impact-card-top-bar top-cyan"></div>
+          <div class="impact-card-header">
+            <span class="impact-card-step">Pillar 01</span>
+            <span class="impact-card-category text-cyan">INSPECT · DEFEND</span>
+          </div>
+          <div class="impact-stat">0</div>
+          <p class="impact-detail">
+            <strong>Critical Inspection Findings</strong> across rigorous HPRA, USFDA, and MHRA regulatory audits, defending IT QMS and Data Integrity programs.
+          </p>
+        </div>
+
+        <!-- Pillar 02 -->
+        <div class="impact-card">
+          <div class="impact-card-top-bar top-purple"></div>
+          <div class="impact-card-header">
+            <span class="impact-card-step">Pillar 02</span>
+            <span class="impact-card-category text-purple">SCALE · VALIDATE</span>
+          </div>
+          <div class="impact-stat">20+ Yrs</div>
+          <p class="impact-detail">
+            <strong>End-to-End CSV Leadership</strong> across SAP S/4HANA greenfield sites, Oracle migrations, and multi-site infrastructure (8 facilities).
+          </p>
+        </div>
+
+        <!-- Pillar 03 -->
+        <div class="impact-card">
+          <div class="impact-card-top-bar top-pink"></div>
+          <div class="impact-card-header">
+            <span class="impact-card-step">Pillar 03</span>
+            <span class="impact-card-category text-pink">GENAI · AUTOMATE</span>
+          </div>
+          <div class="impact-stat">AI Agents</div>
+          <p class="impact-detail">
+            <strong>Deployed Claude & Copilot</strong> quality agents automating deviation records and CAPA drafting under strict GxP controls and ALCOA+ rules.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="impact-footer-caption">
+        <code>// Senior Consultant · LS IT Regulatory Compliance & GenAI Practice Lead · Cork, Ireland</code>
+      </div>
+    </div>
+
+    <!-- Scrolling Tech Marquee Ticker -->
+    <div class="marquee-wrapper">
+      <div class="marquee-track" id="marquee-track">
+        <div class="marquee-item"><span class="bullet">●</span> GenAI Quality Automation</div>
+        <div class="marquee-item"><span class="bullet">●</span> Claude & Microsoft Copilot Agents</div>
+        <div class="marquee-item"><span class="bullet">●</span> Computer Software Assurance (CSA)</div>
+        <div class="marquee-item"><span class="bullet">●</span> GAMP 5 Risk-Based Validation</div>
+        <div class="marquee-item"><span class="bullet">●</span> ALCOA+ Data Integrity & DIMM</div>
+        <div class="marquee-item"><span class="bullet">●</span> 21 CFR Part 11 & EU Annex 11</div>
+        <div class="marquee-item"><span class="bullet">●</span> HPRA / USFDA / MHRA Audit Defense</div>
+        <div class="marquee-item"><span class="bullet">●</span> SAP S/4HANA Greenfield & Migration</div>
+        <div class="marquee-item"><span class="bullet">●</span> Veeva Vault & TrackWise QMS</div>
+        <div class="marquee-item"><span class="bullet">●</span> Micro Focus ALM & HP ALM</div>
+        <div class="marquee-item"><span class="bullet">●</span> Deviations & CAPA Governance</div>
+        <div class="marquee-item"><span class="bullet">●</span> Multi-Site Regulated Infrastructure</div>
+        <!-- Duplicate for seamless continuous loop -->
+        <div class="marquee-item"><span class="bullet">●</span> GenAI Quality Automation</div>
+        <div class="marquee-item"><span class="bullet">●</span> Claude & Microsoft Copilot Agents</div>
+        <div class="marquee-item"><span class="bullet">●</span> Computer Software Assurance (CSA)</div>
+        <div class="marquee-item"><span class="bullet">●</span> GAMP 5 Risk-Based Validation</div>
+        <div class="marquee-item"><span class="bullet">●</span> ALCOA+ Data Integrity & DIMM</div>
+        <div class="marquee-item"><span class="bullet">●</span> 21 CFR Part 11 & EU Annex 11</div>
+        <div class="marquee-item"><span class="bullet">●</span> HPRA / USFDA / MHRA Audit Defense</div>
+        <div class="marquee-item"><span class="bullet">●</span> SAP S/4HANA Greenfield & Migration</div>
+        <div class="marquee-item"><span class="bullet">●</span> Veeva Vault & TrackWise QMS</div>
+        <div class="marquee-item"><span class="bullet">●</span> Micro Focus ALM & HP ALM</div>
+        <div class="marquee-item"><span class="bullet">●</span> Deviations & CAPA Governance</div>
+        <div class="marquee-item"><span class="bullet">●</span> Multi-Site Regulated Infrastructure</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience / Career Timeline Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-eyebrow">Career Milestones</div>
+      <h2 class="section-title">Professional <span class="gradient-text">Experience</span></h2>
+      <p class="section-desc">
+        Over two decades of proven leadership delivering GxP compliance, computer systems validation, regulatory inspection readiness, and quality automation across premier global life sciences companies.
+      </p>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- Experience 1: Cognizant (Present) -->
+        <div class="timeline-entry">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Senior Consultant – LS IT Regulatory Compliance</h3>
+                <div class="company-name">
+                  <span>Cognizant Technology Solutions</span>
+                  <span style="color: var(--text-muted); font-weight: 400;">· Onsite IT Quality Leadership</span>
+                </div>
+              </div>
+              <div class="timeline-meta">
+                <div>Jan 2019 – Present</div>
+                <div style="color: var(--cyan);">Cork, Ireland (Onsite Lead)</div>
+              </div>
+            </div>
+
+            <ul class="timeline-points">
+              <li><strong>Onsite IT Quality Leadership:</strong> Lead onsite IT Quality and GxP compliance activities for a flagship life-sciences manufacturing facility in Cork, governing deviations, CAPAs, change controls, audit-trail reviews, periodic reviews, and full system lifecycle activities.</li>
+              <li><strong>Flawless Regulatory Audit Record:</strong> Maintain continuous regulatory inspection readiness for HPRA, USFDA, and MHRA audits, successfully defending IT QMS and Data Integrity programs with zero critical findings.</li>
+              <li><strong>Data Integrity & Governance:</strong> Drive site Data Integrity governance aligned with ALCOA+ and the Data Integrity Maturity Model (DIMM), conducting routine data checks, audit-trail reviews, and vulnerability gap assessments.</li>
+              <li><strong>GenAI Quality Automation:</strong> Designed and deployed an innovative Deviations Agent built on Claude and Microsoft Copilot to support investigation and documentation of deviation records within GxP compliance controls, significantly reducing manual drafting effort while boosting compliance accuracy.</li>
+              <li><strong>Cross-Functional Leadership:</strong> Provide strategic direction across IT, Quality, Manufacturing, and Engineering teams, authoring SOPs and delivering specialized training on data integrity and compliant documentation.</li>
+            </ul>
+
+            <div class="tech-pill-group">
+              <span class="tech-pill">GenAI (Claude & Copilot)</span>
+              <span class="tech-pill">HPRA / USFDA Audit Defense</span>
+              <span class="tech-pill">ALCOA+ / DIMM</span>
+              <span class="tech-pill">Deviations & CAPA</span>
+              <span class="tech-pill">Audit Trail Review (ATR)</span>
+              <span class="tech-pill">GxP IT Governance</span>
+            </div>
+
+            <!-- Major Regulated Project Engagements within Cognizant -->
+            <div class="subproject-accordion">
+              <div class="subproject-heading">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <span>Key Client Projects & Validation Leadership (Cognizant)</span>
+              </div>
+              <div class="subproject-grid">
+                
+                <div class="subproject-mini-card">
+                  <div class="subproject-title">SAP S/4HANA Greenfield Implementation</div>
+                  <div class="subproject-role">Compliance Lead · US Surgical Devices Co.</div>
+                  <p class="subproject-desc">
+                    Led end-to-end CSV for a new manufacturing facility. Authored and reviewed Validation Plans, Risk Assessments, Test Scripts, and VSRs. Managed test execution in Micro Focus ALM and document routing via Veritas DMS.
+                  </p>
+                </div>
+
+                <div class="subproject-mini-card">
+                  <div class="subproject-title">SAP S/4HANA Migration Project</div>
+                  <div class="subproject-role">Compliance Lead · US Bio-Pharmaceutical Co.</div>
+                  <p class="subproject-desc">
+                    Directed validation activities for an Oracle EBS-to-SAP S/4HANA enterprise migration. Led requirements gathering and risk assessments to establish an agile, risk-based validation strategy.
+                  </p>
+                </div>
+
+                <div class="subproject-mini-card">
+                  <div class="subproject-title">Multi-Site Infrastructure Qualification</div>
+                  <div class="subproject-role">Compliance Lead · US Pharmaceutical Co.</div>
+                  <p class="subproject-desc">
+                    Oversaw regulated infrastructure qualification across 8 manufacturing sites, covering network switches, gateways, and firewalls. Reviewed qualification plans, network diagrams, and test cases in ALM.
+                  </p>
+                </div>
+
+                <div class="subproject-mini-card">
+                  <div class="subproject-title">SAP Global Application Management Services</div>
+                  <div class="subproject-role">Compliance Lead · UK Injectable Co.</div>
+                  <p class="subproject-desc">
+                    Performed GxP compliance reviews for SAP change controls, bug fixes, and release enhancements. Approved test executions and defects in HP ALM; participated in Change Control Board (CCB) meetings.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Experience 2: Pfizer -->
+        <div class="timeline-entry">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Assistant Manager – Instrumentation & Qualification</h3>
+                <div class="company-name">Pfizer Pharmaceuticals</div>
+              </div>
+              <div class="timeline-meta">
+                <div>Mar 2015 – Jan 2019</div>
+                <div>India</div>
+              </div>
+            </div>
+
+            <ul class="timeline-points">
+              <li><strong>Team Leadership:</strong> Led a dedicated team of instrumentation and software qualification specialists responsible for qualification, calibration, and maintenance of analytical and R&D laboratory equipment.</li>
+              <li><strong>Full Lifecycle CSV:</strong> Directed end-to-end Computerized Systems Validation (URS, IQ/OQ/PQ, CSRA, Validation Summary Reports) for R&D equipment, laboratory software, and standalone computerized workstations.</li>
+              <li><strong>Data Integrity & 21 CFR Part 11:</strong> Conducted DI risk assessments, gap assessments, and periodic reviews across R&D instrument software to ensure strict adherence to ALCOA+, 21 CFR Part 11, and EU Annex 11.</li>
+              <li><strong>TrackWise QMS Governance:</strong> Managed deviations, incident investigations, change controls, and CAPAs through TrackWise, driving timely root cause analysis, documentation, and compliant closure.</li>
+              <li><strong>Preventive Maintenance:</strong> Governed site-wide calibration schedules, vendor oversight, and compliant commissioning for instrument software upgrades.</li>
+            </ul>
+
+            <div class="tech-pill-group">
+              <span class="tech-pill">Pfizer QMS</span>
+              <span class="tech-pill">TrackWise</span>
+              <span class="tech-pill">21 CFR Part 11 & EU Annex 11</span>
+              <span class="tech-pill">Analytical Instrumentation</span>
+              <span class="tech-pill">URS / IQ / OQ / PQ</span>
+              <span class="tech-pill">Calibration Governance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3: Clinigene -->
+        <div class="timeline-entry">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Associate Manager – Engineering & Maintenance</h3>
+                <div class="company-name">Clinigene International (A Syngene Company)</div>
+              </div>
+              <div class="timeline-meta">
+                <div>Oct 2014 – Feb 2015</div>
+                <div>India</div>
+              </div>
+            </div>
+
+            <ul class="timeline-points">
+              <li>Directed computerized systems and laboratory equipment validation activities in accordance with the CSV Master Plan and cGMP / FDA / GLP regulatory requirements.</li>
+              <li>Performed Data Integrity risk assessments, gap analysis, and qualification protocols (IQ/OQ/PQ) for analytical and R&D instrumentation.</li>
+              <li>Authored Computer System Risk Assessments, Validation Plans, and Traceability Matrices, ensuring data integrity controls and audit trail integrity.</li>
+            </ul>
+
+            <div class="tech-pill-group">
+              <span class="tech-pill">Syngene / Clinigene</span>
+              <span class="tech-pill">CSV Master Plan</span>
+              <span class="tech-pill">cGMP / GLP</span>
+              <span class="tech-pill">Traceability Matrices</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 4: Lotus Labs -->
+        <div class="timeline-entry">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="role-title">Junior Executive – Instrumentation Engineer</h3>
+                <div class="company-name">Lotus Labs Pvt Ltd</div>
+              </div>
+              <div class="timeline-meta">
+                <div>Jan 2005 – Aug 2014</div>
+                <div>India</div>
+              </div>
+            </div>
+
+            <ul class="timeline-points">
+              <li>Executed equipment and software qualification protocols, including IQ and PQ activities, across pharmaceutical manufacturing and controlled environments.</li>
+              <li>Supported validation and qualification activities for instrumentation, software, and controlled areas in strict accordance with GxP and FDA requirements.</li>
+            </ul>
+
+            <div class="tech-pill-group">
+              <span class="tech-pill">Equipment Qualification</span>
+              <span class="tech-pill">Controlled Areas / Cleanrooms</span>
+              <span class="tech-pill">FDA Compliance</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects & Initiatives Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-eyebrow">Key Initiatives</div>
+      <h2 class="section-title">Featured <span class="gradient-text">Projects & Case Studies</span></h2>
+      <p class="section-desc">
+        A closer look at key strategic programs spanning autonomous GenAI quality agents, multi-million enterprise ERP validations, and global infrastructure qualification.
+      </p>
+
+      <div class="projects-grid">
+        
+        <!-- Featured Card: GenAI -->
+        <div class="project-card featured-card">
+          <div class="project-badge-top">
+            <span class="project-tag">Featured Innovation · GenAI Practice Lead</span>
+            <div class="pill-badge" style="border-color: var(--cyan); color: var(--cyan);">
+              <span>Regulated Production</span>
+            </div>
+          </div>
+
+          <h3 class="project-title">Autonomous GxP Deviations & CAPA Agent</h3>
+          <p class="project-desc">
+            Conceptualized and deployed an intelligent compliance agent built upon Claude and Microsoft Copilot to automate the end-to-end investigation and documentation of deviation records within highly regulated life-sciences manufacturing environments.
+          </p>
+
+          <ul class="project-highlights">
+            <li>Synthesizes incident logs, operator statements, and machine sensor alerts to draft root-cause analyses under GxP guardrails.</li>
+            <li>Enforces ALCOA+ data integrity and pre-validates regulatory terminology before human quality sign-off.</li>
+            <li>Reduces manual drafting effort for the quality assurance team by over 40% while preserving 100% audit trail reproducibility.</li>
+          </ul>
+
+          <div class="tech-pill-group">
+            <span class="tech-pill">Claude LLM</span>
+            <span class="tech-pill">Microsoft Copilot</span>
+            <span class="tech-pill">GxP Prompt Engineering</span>
+            <span class="tech-pill">Audit Trail Governance</span>
+            <span class="tech-pill">Quality Automation</span>
+          </div>
+        </div>
+
+        <!-- Project 2: SAP S/4HANA Greenfield -->
+        <div class="project-card">
+          <div class="project-badge-top">
+            <span class="project-tag">ERP Validation</span>
+            <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--purple);">Greenfield Site</span>
+          </div>
+          <h3 class="project-title">SAP S/4HANA Greenfield Manufacturing Validation</h3>
+          <p class="project-desc">
+            Delivered comprehensive CSV and Computer Software Assurance (CSA) for a new US-based surgical device manufacturing facility from inception to go-live.
+          </p>
+          <ul class="project-highlights">
+            <li>Authored Master Validation Plans, Risk Assessments, Test Scripts, and VSRs.</li>
+            <li>Managed multi-team test execution within Micro Focus ALM and document approvals in Veritas DMS.</li>
+            <li>Zero critical findings during post-implementation audits.</li>
+          </ul>
+          <div class="tech-pill-group">
+            <span class="tech-pill">SAP S/4HANA</span>
+            <span class="tech-pill">Micro Focus ALM</span>
+            <span class="tech-pill">Veritas DMS</span>
+            <span class="tech-pill">GAMP 5</span>
+          </div>
+        </div>
+
+        <!-- Project 3: SAP Migration -->
+        <div class="project-card">
+          <div class="project-badge-top">
+            <span class="project-tag">System Migration</span>
+            <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--pink);">Enterprise Scale</span>
+          </div>
+          <h3 class="project-title">Oracle EBS to SAP S/4HANA Enterprise Migration</h3>
+          <p class="project-desc">
+            Directed validation activities for an enterprise-wide core ERP migration for a leading US-based bio-pharmaceutical company.
+          </p>
+          <ul class="project-highlights">
+            <li>Established a risk-based validation strategy focusing on high-risk GxP process touchpoints.</li>
+            <li>Governed data migration integrity verification and cutover testing protocols.</li>
+            <li>Formulated computerized systems risk assessments ensuring compliant traceability.</li>
+          </ul>
+          <div class="tech-pill-group">
+            <span class="tech-pill">Oracle EBS</span>
+            <span class="tech-pill">SAP S/4HANA</span>
+            <span class="tech-pill">Data Migration</span>
+            <span class="tech-pill">Risk-Based CSV</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Multi-Site Infrastructure -->
+        <div class="project-card">
+          <div class="project-badge-top">
+            <span class="project-tag">Infrastructure</span>
+            <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--amber);">8 Manufacturing Sites</span>
+          </div>
+          <h3 class="project-title">Multi-Site Regulated IT Infrastructure Qualification</h3>
+          <p class="project-desc">
+            Oversaw regulated infrastructure qualification across 8 global manufacturing sites for a premier US pharmaceutical corporation.
+          </p>
+          <ul class="project-highlights">
+            <li>Qualified enterprise network switches, industrial gateways, and perimeter firewalls.</li>
+            <li>Standardized qualification plans, network topology diagrams, and test protocols in ALM.</li>
+            <li>Coordinated smoothly with site quality leads and global IT architecture boards.</li>
+          </ul>
+          <div class="tech-pill-group">
+            <span class="tech-pill">Regulated Networks</span>
+            <span class="tech-pill">Firewalls & Gateways</span>
+            <span class="tech-pill">HP ALM</span>
+            <span class="tech-pill">Multi-Site Coordination</span>
+          </div>
+        </div>
+
+        <!-- Project 5: SAP AMS -->
+        <div class="project-card">
+          <div class="project-badge-top">
+            <span class="project-tag">Lifecycle Governance</span>
+            <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--emerald);">UK Injectables</span>
+          </div>
+          <h3 class="project-title">SAP Application Management Services (AMS) Quality</h3>
+          <p class="project-desc">
+            Performed ongoing GxP compliance reviews for SAP change controls, emergency patches, and release enhancements for a UK-based injectable medicines manufacturer.
+          </p>
+          <ul class="project-highlights">
+            <li>Reviewed and approved test cases, test execution runs, and defect resolutions in HP ALM.</li>
+            <li>Steered Change Control Board (CCB) reviews and monitored training compliance.</li>
+          </ul>
+          <div class="tech-pill-group">
+            <span class="tech-pill">Change Control Board</span>
+            <span class="tech-pill">Release Management</span>
+            <span class="tech-pill">HP ALM</span>
+            <span class="tech-pill">GxP Compliance</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Competencies Section -->
+  <section id="competencies">
+    <div class="container">
+      <div class="section-eyebrow">Skills & Capabilities</div>
+      <h2 class="section-title">Core <span class="gradient-text">Competencies</span></h2>
+      <p class="section-desc">
+        A comprehensive matrix of technical, regulatory, and quality engineering proficiencies honed across two decades of high-stakes life-sciences operations.
+      </p>
+
+      <div class="skills-grid">
+        
+        <!-- Category 1 -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-dot-indicator dot-cyan"></span>
+            <h3 class="skill-card-title">AI & Quality Automation</h3>
+          </div>
+          <div class="skill-tags-wrapper">
+            <span class="skill-badge">Generative AI for GxP</span>
+            <span class="skill-badge">Autonomous AI Agents</span>
+            <span class="skill-badge">AI Quality Documentation</span>
+            <span class="skill-badge">Automated Compliance Auditing</span>
+            <span class="skill-badge">Claude LLM</span>
+            <span class="skill-badge">Microsoft Copilot</span>
+            <span class="skill-badge">LLM Prompt Engineering</span>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-dot-indicator dot-purple"></span>
+            <h3 class="skill-card-title">GxP, Data Integrity & Regulatory</h3>
+          </div>
+          <div class="skill-tags-wrapper">
+            <span class="skill-badge">GMP / GLP / GCP / GDP</span>
+            <span class="skill-badge">21 CFR Part 11</span>
+            <span class="skill-badge">EU GMP Annex 11</span>
+            <span class="skill-badge">ALCOA+ Framework</span>
+            <span class="skill-badge">Data Integrity Maturity Model (DIMM)</span>
+            <span class="skill-badge">DI Risk Assessments</span>
+            <span class="skill-badge">HPRA / USFDA / MHRA Defense</span>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-dot-indicator dot-pink"></span>
+            <h3 class="skill-card-title">IT Quality & QMS Governance</h3>
+          </div>
+          <div class="skill-tags-wrapper">
+            <span class="skill-badge">IT QMS Governance</span>
+            <span class="skill-badge">Deviations Management</span>
+            <span class="skill-badge">CAPA Root Cause Analysis</span>
+            <span class="skill-badge">Change Control Management</span>
+            <span class="skill-badge">Audit-Trail Review (ATR)</span>
+            <span class="skill-badge">System Lifecycle Management</span>
+            <span class="skill-badge">Vendor Oversight & Audits</span>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-dot-indicator dot-green"></span>
+            <h3 class="skill-card-title">CSV & CSA Expertise</h3>
+          </div>
+          <div class="skill-tags-wrapper">
+            <span class="skill-badge">Computer Software Assurance (CSA)</span>
+            <span class="skill-badge">GAMP 5 (2nd Edition)</span>
+            <span class="skill-badge">Validation Lifecycle</span>
+            <span class="skill-badge">User Requirements (URS)</span>
+            <span class="skill-badge">Risk-Based Validation</span>
+            <span class="skill-badge">IQ / OQ / PQ Execution</span>
+            <span class="skill-badge">Validation Summary Reports (VSR)</span>
+            <span class="skill-badge">Traceability Matrices (RTM)</span>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="skill-card">
+          <div class="skill-card-header" style="--dot-color: var(--amber);">
+            <span class="skill-dot-indicator" style="background: var(--amber); box-shadow: 0 0 10px var(--amber);"></span>
+            <h3 class="skill-card-title">Systems & Regulated Platforms</h3>
+          </div>
+          <div class="skill-tags-wrapper">
+            <span class="skill-badge">SAP S/4HANA</span>
+            <span class="skill-badge">Veeva Vault</span>
+            <span class="skill-badge">TrackWise QMS</span>
+            <span class="skill-badge">Micro Focus ALM / HP ALM</span>
+            <span class="skill-badge">Oracle EBS</span>
+            <span class="skill-badge">Veritas DMS</span>
+            <span class="skill-badge">EDMS & LIMS</span>
+          </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-dot-indicator" style="background: #38bdf8; box-shadow: 0 0 10px #38bdf8;"></span>
+            <h3 class="skill-card-title">Infrastructure & Instrumentation</h3>
+          </div>
+          <div class="skill-tags-wrapper">
+            <span class="skill-badge">Multi-Site Network Qualification</span>
+            <span class="skill-badge">Regulated Switches & Gateways</span>
+            <span class="skill-badge">Firewalls & Cybersecurity</span>
+            <span class="skill-badge">Cloud Infrastructure Qualification</span>
+            <span class="skill-badge">Analytical Equipment Qualification</span>
+            <span class="skill-badge">Calibration Schedules</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education, Credentials & Regulatory Standards -->
+  <section id="credentials">
+    <div class="container">
+      <div class="section-eyebrow">Education & Credentials</div>
+      <h2 class="section-title">Academic & Regulatory <span class="gradient-text">Foundations</span></h2>
+      <p class="section-desc">
+        Engineering heritage combined with international work authorization and continuous regulatory domain mastery.
+      </p>
+
+      <div class="credentials-grid">
+        
+        <div class="cred-card">
+          <h3 class="cred-title">Bachelor of Engineering (B.E.)</h3>
+          <div class="cred-subtitle">Biomedical Engineering</div>
+          <p class="cred-desc">
+            <strong>Manipal Institute of Technology (2004)</strong><br>
+            Rigorous engineering grounding bridging medical technologies, instrumentation electronics, physiological measurements, and software systems.
+          </p>
+        </div>
+
+        <div class="cred-card">
+          <h3 class="cred-title">Work Authorization</h3>
+          <div class="cred-subtitle">Stamp 4 – Ireland (Full Working Rights)</div>
+          <p class="cred-desc">
+            Fully authorized to work in Ireland with full eligibility. No employment permit or visa sponsorship required. Immediately available for opportunities across Cork and Ireland.
+          </p>
+        </div>
+
+        <div class="cred-card">
+          <h3 class="cred-title">Languages & Communication</h3>
+          <div class="cred-subtitle">Multilingual Cross-Cultural Collaboration</div>
+          <p class="cred-desc">
+            • <strong>English</strong>: Professional Full Working Proficiency<br>
+            • <strong>Hindi</strong>: Native / Fluent<br>
+            • <strong>Kannada</strong>: Native / Fluent<br>
+            Extensive experience liaising with US, UK, European, and Asian stakeholders.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section (Identical Structure to sakshimannur12.github.io/#contact) -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        
+        <div class="contact-eyebrow">CONTACT</div>
+        
+        <h2 class="contact-heading">
+          Let's talk about GxP compliance, CSV leadership, or your <span class="gradient-cta">next GenAI quality initiative</span>.
+        </h2>
+
+        <!-- Interactive Email Display with Copy Button -->
+        <div class="contact-snippet-row">
+          <div class="email-container">
+            <span class="email-text" id="email-address-text">sandeepkumarg08@gmail.com</span>
+            <button class="btn-copy" id="btn-copy-email" aria-label="Copy email address to clipboard">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span id="copy-btn-label">Copy email</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Action Links: LinkedIn, Phone, Direct Email, Print CV -->
+        <div class="contact-actions-grid">
+          <a href="https://linkedin.com/in/sandeep-kumar-cork" target="_blank" rel="noopener noreferrer" class="btn-contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <span>LinkedIn ↗</span>
+          </a>
+
+          <a href="tel:+353892749472" class="btn-contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Call: 089 274 9472</span>
+          </a>
+
+          <a href="mailto:sandeepkumarg08@gmail.com?subject=Opportunity%20Inquiry%20-%20Life%20Sciences%20IT%20Quality%20/%20CSV%20Lead" class="btn-contact-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Send Direct Message</span>
+          </a>
+
+          <button onclick="window.print()" class="btn-contact-link" style="cursor: pointer; background: transparent;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <span>Print / Save CV</span>
+          </button>
+        </div>
+
+        <!-- Quick Detail Meta Table -->
+        <div class="contact-details-grid">
+          <div>
+            <div class="detail-item-label">Current Base</div>
+            <div class="detail-item-val">Cork, Ireland</div>
+          </div>
+          <div>
+            <div class="detail-item-label">Work Authorization</div>
+            <div class="detail-item-val">Stamp 4 (Full Eligibility)</div>
+          </div>
+          <div>
+            <div class="detail-item-label">Primary Email</div>
+            <div class="detail-item-val">sandeepkumarg08@gmail.com</div>
+          </div>
+          <div>
+            <div class="detail-item-label">Direct Phone</div>
+            <div class="detail-item-val">+353 89 274 9472</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toast-notice">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span>Email address copied to clipboard!</span>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        © 2026 <strong>Sandeep Kumar</strong> · Senior Life Sciences IT Quality & CSV Lead | GenAI Practice Lead
+      </div>
+      <div>
+        Designed for regulated innovation · Cork, Ireland
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    // 1. Dynamic Typewriter Effect
+    const phrases = [
+      "Senior Life Sciences IT Quality & CSV Lead",
+      "GenAI Practice Lead · GxP Quality Automation",
+      "Computer Software Assurance (CSA) & GAMP 5 Expert",
+      "Data Integrity (ALCOA+) & Inspection Defense Lead"
+    ];
+
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingSpeed = 70;
+    const typewriterElement = document.getElementById("typewriter-text");
+
+    function typeLoop() {
+      const currentPhrase = phrases[phraseIndex];
+      
+      if (isDeleting) {
+        typewriterElement.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+        typingSpeed = 35;
+      } else {
+        typewriterElement.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+        typingSpeed = 75;
+      }
+
+      if (!isDeleting && charIndex === currentPhrase.length) {
+        typingSpeed = 2200; // Pause at completion
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+        typingSpeed = 400; // Pause before new phrase
+      }
+
+      setTimeout(typeLoop, typingSpeed);
+    }
+    document.addEventListener("DOMContentLoaded", typeLoop);
+
+    // 2. Interactive Email Copy to Clipboard with Feedback Toast
+    const copyBtn = document.getElementById("btn-copy-email");
+    const copyLabel = document.getElementById("copy-btn-label");
+    const toastNotice = document.getElementById("toast-notice");
+    const emailToCopy = "sandeepkumarg08@gmail.com";
+
+    copyBtn.addEventListener("click", () => {
+      navigator.clipboard.writeText(emailToCopy).then(() => {
+        copyLabel.textContent = "Copied!";
+        copyBtn.style.background = "#10b981";
+        toastNotice.classList.add("show");
+
+        setTimeout(() => {
+          copyLabel.textContent = "Copy email";
+          copyBtn.style.background = "";
+          toastNotice.classList.remove("show");
+        }, 3000);
+      }).catch(err => {
+        // Fallback for older browsers or permission issues
+        const tempInput = document.createElement("input");
+        tempInput.value = emailToCopy;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        
+        copyLabel.textContent = "Copied!";
+        toastNotice.classList.add("show");
+        setTimeout(() => {
+          copyLabel.textContent = "Copy email";
+          toastNotice.classList.remove("show");
+        }, 3000);
+      });
+    });
+
+    // 3. Scroll Spy Navigation Highlight
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let scrollY = window.pageYOffset;
+
+      sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 120;
+        const sectionId = current.getAttribute("id");
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${sectionId}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    });
+
+    // 4. Subtle Ambient Particle Stars Canvas
+    const canvas = document.getElementById("ambient-canvas");
+    const ctx = canvas.getContext("2d");
+
+    let width = canvas.width = window.innerWidth;
+    let height = canvas.height = window.innerHeight;
+
+    window.addEventListener("resize", () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    });
+
+    const particles = [];
+    const particleCount = Math.min(width > 768 ? 65 : 30, 80);
+
+    for (let i = 0; i < particleCount; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        radius: Math.random() * 1.5 + 0.5,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3,
+        alpha: Math.random() * 0.5 + 0.2
+      });
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, width, height);
+
+      particles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0) p.x = width;
+        if (p.x > width) p.x = 0;
+        if (p.y < 0) p.y = height;
+        if (p.y > height) p.y = 0;
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(168, 85, 247, ${p.alpha})`;
+        ctx.fill();
+      });
+
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+  </script>
+</body>
+</html>
